@@ -19,7 +19,7 @@ position: absolute;
  */
 .content{
 
-min-height: 80%;
+min-height: 100%;
 padding-bottom:100px;
 
 
@@ -28,6 +28,18 @@ padding-bottom:100px;
 height:100px;
 position:absoulute;
 bottom: 0px;
+width:100%;
+}
+#footer nav {
+	color: white;
+	text-align: justify;
+	margin: 0px;
+}
+
+#footer {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
 }
 
 .navbar{

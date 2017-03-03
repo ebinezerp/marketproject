@@ -30,12 +30,12 @@ public class ProductDaoImp implements ProductDao {
 		return sessionFactory.getCurrentSession().createQuery("From Product", Product.class).getResultList();
 	}
 	public Product getProduct(int id) {
-		// TODO Auto-generated method stub
-		return null;
+	product=	sessionFactory.getCurrentSession().get(Product.class, id);
+		return product;
 	}
 	public int insert(int id,String name,float price) {
-
-		 product.setId(id);
+System.out.println("Entered Product DAO");		
+	product.setId(id);
 		 product.setName(name);
 		 product.setPrice(price);
 		

@@ -58,4 +58,6 @@
 		</div>
 		</nav>
 	</div>
+	<%@include file="login.jsp"%>
+			<%@include file="signup.jsp"%>
 	</div>

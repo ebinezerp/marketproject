@@ -24,19 +24,6 @@
 <script src='${jq}'></script>
 <script src="${js}"></script>
 <link rel="stylesheet" href='${style}'>
-<style type="text/css">
-#footer nav {
-	color: white;
-	text-align: justify;
-	margin: 0px;
-}
-
-#footer {
-	width: 100%;
-	margin: 0px;
-	padding: 0px;
-}
-</style>
 </head>
 <body>
 
@@ -221,8 +208,7 @@
 
 
 			<!-- Ending of Product frames -->
-			<%@include file="login.jsp"%>
-			<%@include file="signup.jsp"%>
+			
 		</div>
 		<%@include file="footer.jsp"%>
 

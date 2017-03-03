@@ -17,11 +17,15 @@ $(document).ready(function(){
           
           {"data":"id",
         	  "render":function(data,type,row){
-        		  return "<a href='online/products/"+data+"' class='btn btn-primary'>view</a>";
+        		  return "<a href='getproduct/"+data+"' class='btn btn-info'>view</a>";
         	  }
-          }
+          },
         	  
-        	  
+          {"data":"id",
+        	  "render":function(data,type,row){
+        		  return "<a href='#' class='btn btn-primary'>Add Cart</a>";
+        	  }
+          }  
                     
       ]
   });

@@ -1,3 +1,4 @@
+
 <div class="header">
 	<div class="container-fluid">
 		<div class="row" id="header">
@@ -18,7 +19,7 @@
 							style="float: right">
 							<ul class="nav navbar-nav navbar-right mainnav-items"
 								style="margin-right: 20px;">
-								<li class="active"><a href="/">Home</a></li>
+								<li class="active"><a href="/onlinemall/">Home</a></li>
 								<li><a href="#">About Us</a></li>
 								<li><a href="#">Contact Us</a></li>
 								<li><a href="#" class="" id="login"><span

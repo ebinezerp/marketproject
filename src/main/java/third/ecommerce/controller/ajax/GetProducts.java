@@ -5,9 +5,11 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.servlet.ModelAndView;
 
 import third.ecommerce.dao.ProductDao;
 import third.ecommerce.model.Product;
@@ -24,11 +26,13 @@ public class GetProducts {
 		
 		return (productDao.list());
 	}
-@RequestMapping("/products/{id}")
-public List<Product> getProduct()
+@RequestMapping("/getproduct/{id}")
+public ModelAndView getProduct(@PathVariable(value="id") int id)
 {
-	System.out.println("get product:"+id);
+	System.out.println("entered GetProduct");
+	ModelAndView mv=new ModelAndView("productpage");
+	mv.addObject("product",productDao.getProduct(id));
 	
-	return null;
+	return mv;
 }
 }

@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" isELIgnored="false"
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -21,11 +21,12 @@
 <link rel="stylesheet" href='${css}'>
 <link rel="stylesheet" href='${social}'>
 <link rel="stylesheet" href='${font}'>
+<link rel="stylesheet" href='${style}'>
 <script src='${jq}'></script>
 <script src="${js}"></script>
 </head>
 <body>
-<div>
+<div class="wrapper">
 <%@include file="header.jsp" %>
 <div class="content">
 
@@ -33,13 +34,26 @@
 
 <div class="row">
 <div class="col-sm-1"></div>
-<div class="col-sm-3">
-<div class="">
-<img src="{electronics}/table/{id}">
+<div class="col-sm-3" style="float:left;">
+<div class="thumbnail" style="height:auto;">
+<img src='${electronics}table/${product.id}.jpg' style="">
+
+</div>
+</div>
+<div class="col-sm-6" style="float:right;margin-right:5%;">
+<div class="table-responsive">
+<table class="table table-condensed">
+<tr><th colspan="2">Product Details </th></tr>
+<tr><td>Name</td><td>${product.name}</td></tr>
+<tr><td>Name</td><td>${product.price}</td></tr>
+</table>
 
 </div>
 
-</</div>
+
+
+</div>
+
 <div class="col-sm-1"></div>
 
 

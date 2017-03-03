@@ -7,9 +7,11 @@
 <title>Market- Home page</title>
 <meta charset="utf-8">
 <spring:url value="/assets/css/bootstrap.min.css" var="css"></spring:url>
+<spring:url value="/assets/css/bootstrap-theme.min.css" var="themecss"></spring:url>
+
 <spring:url value="/assets/css/bootstrap-social.css" var="social"></spring:url>
 <spring:url value="/assets/css/font-awesome.css" var="font"></spring:url>
-<spring:url value="/assets/js/bootstrap.min.js" var="js"></spring:url>
+<spring:url value="/assets/css/font-awesome.css" var="font"></spring:url>
 <spring:url value="/assets/style/style.css" var="style"></spring:url>
 <spring:url value="/assets/images/" var="logo"></spring:url>
 <spring:url value="/assets/images/products/electronics/"
@@ -18,6 +20,7 @@
 <spring:url
 	value="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"
 	var="jq"></spring:url>
+<spring:url value="/assets/js/bootstrap.min.js" var="js"></spring:url>
 <spring:url value="/assets/js/productajax.js" var="tableajax"></spring:url>
 <spring:url value="/assets/js/jquery.dataTables.js" var="datatable"></spring:url>
 
@@ -28,6 +31,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href='${css}'>
+<link rel="stylesheet" href='${themecss}'>
 <link rel="stylesheet" href='${datatablecss}'>
 <link rel="stylesheet" href='${social}'>
 <link rel="stylesheet" href='${font}'>
@@ -71,7 +75,7 @@
 					<div class="col-sm-1"></div>
 					<div class="col-sm-10" style="boder:thin">
 						<div class="table-responsive">
-							<table class="table table-condensed table-hover"
+							<table class="table table-hover"
 								id="producttable">
 
 
@@ -82,6 +86,7 @@
 										<th>Product Price</th>
 										<th>preview</th>
 										<th></th>
+										<th></th>
 										
 									</tr>
 								</thead>
@@ -91,6 +96,7 @@
 										<th>name</th>
 										<th>price</th>
 										<th>preview</th>
+										<th></th>
 										<th></th>
 									</tr>
 								</tfoot>
