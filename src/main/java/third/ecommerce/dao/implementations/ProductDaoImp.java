@@ -34,9 +34,12 @@ public class ProductDaoImp implements ProductDao {
 		return null;
 	}
 	public int insert(int id,String name,float price) {
-//		
+
+		 product.setId(id);
+		 product.setName(name);
+		 product.setPrice(price);
 		
-		sessionFactory.getCurrentSession().persist(new Product());
+		sessionFactory.getCurrentSession().persist(product);
 		
 		
 return id;

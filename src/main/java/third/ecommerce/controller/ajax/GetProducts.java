@@ -24,5 +24,11 @@ public class GetProducts {
 		
 		return (productDao.list());
 	}
-
+@RequestMapping("/products/{id}")
+public List<Product> getProduct()
+{
+	System.out.println("get product:"+id);
+	
+	return null;
+}
 }

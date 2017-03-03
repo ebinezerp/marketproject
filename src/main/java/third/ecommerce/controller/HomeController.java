@@ -33,7 +33,7 @@ public class HomeController {
 	@RequestMapping("/insertpage")
 	public ModelAndView save(){
 		System.out.println("entered");
-		int i=productDao.insert(2, "Ebinezer", 3000.00f);
+		int i=productDao.insert(3, "Ebinezer", 3000.00f);
 		System.out.println(i);
 		ModelAndView mv=new ModelAndView("insert");
 		mv.addObject("id",i);
